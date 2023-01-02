@@ -1,4 +1,4 @@
-name: CICD for Youtube
+name: node js ci cd learning
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
          node-version: ${{ matrix.node-version }}
-      - name: npm install and build
+      - name: npm install
         run: |
           npm install
 
@@ -43,7 +43,6 @@ jobs:
               . ~/.nvm/nvm.sh
 
                nvm instal 14
-               npm install -g pm2
                cd ~/CICD
                git pull origin main
                npm install
