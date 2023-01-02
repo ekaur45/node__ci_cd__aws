@@ -39,7 +39,7 @@ jobs:
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
           script: |
-               cd /home/ubuntu/github/node__ci_cd__aws
+               cd /home/ubuntu/github/node__ci_cd__aws__new
                git pull origin main
                npm install
                pm2 delete api
