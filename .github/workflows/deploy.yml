@@ -21,7 +21,6 @@ jobs:
       - name: npm install and build
         run: |
           npm install
-          npm run build
 
         env: 
           CI: true   
@@ -48,7 +47,6 @@ jobs:
                cd ~/CICD
                git pull origin main
                npm install
-               npm run build
                pm2 restart api
             
 
